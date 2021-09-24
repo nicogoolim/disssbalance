@@ -1,0 +1,102 @@
+body{
+    background-color: #aaa;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.clear{
+    clear:both;
+}
+
+.page_wrapper{
+    width: 960px;
+    margin: 0 auto;
+    background-color:#fff ;
+}
+footer{
+    background-color: black ;
+    margin: 0 auto;
+    width: 960px;
+}
+.page_wrapper .white{
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+}
+.page_wrapper .black{
+    background-color: black;
+    color: white;
+    padding: 10px 30px 30px 30px;
+}
+.page_wrapper .white .head{
+    font-size: 30px;
+    color: #777;
+}
+
+.page_wrapper .white .menu{
+    margin-top: 30px;
+    text-align: right;
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+}
+.page_wrapper .white .menu a{
+    padding: 0px 10px;
+    color: #777;
+    text-decoration: none;
+}
+.page_wrapper .white .menu a.active_link{
+    font-weight: bold;
+
+}
+.page_wrapper .white .title{
+    margin: 60px 0px;
+    font-size: 50px;
+    line-height: 40px;
+    border-bottom: 1px solid #000;
+}
+.page_wrapper .white .content{
+    padding-bottom: 30px;
+    border-bottom:  1px solid black;
+}
+
+.page_wrapper .white .content .my_image{
+    float:left;
+    width: 40%;
+    
+}
+.page_wrapper .white .content .text_about_me{
+    float:right;
+    width: 60%;
+    font-size: 12px;
+}
+ .page_wrapper .white .content .few_words{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    width: 45%;
+ }
+ .page_wrapper .white .content .text_about_me .quote{
+    padding: 15px;
+    background-color: #eee ;
+
+ }
+ .page_wrapper .white .content .text_about_me .quote p:first-child{
+    font-style: italic;
+ }
+ .page_wrapper .white .content .text_about_me .quote p:last-child{
+     text-align: right;
+}
+.page_wrapper .white .content .my_image img{
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+   
+}
+.page_wrapper .white .skills{
+    padding: 40px 0 px;
+    border-bottom: 1px solid black;
+}
+.page_wrapper .white .skills .my_skills, 
+.page_wrapper .white .skills .what_can_i_do{
+    float: left;
+    width: 50%;
+}
