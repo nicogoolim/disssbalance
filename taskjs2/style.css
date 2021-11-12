@@ -1,0 +1,24 @@
+.hide{
+    display: none;
+}
+.show{
+display: block;
+}
+
+.red{
+    color: red;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.line{
+    text-decoration: line-through ;
+}
+.countries_off{
+    display: none;
+}
+.countries_on{
+    display: block;
+}

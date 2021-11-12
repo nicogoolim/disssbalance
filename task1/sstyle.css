@@ -1,7 +1,10 @@
 body{
-    background-color: rgb(173, 45, 45);
+    background-color: #aaa;
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div{
+    box-sizing: border-box;
 }
 .clear{
     clear:both;
@@ -10,7 +13,7 @@ body{
 .page_wrapper{
     width: 960px;
     margin: 0 auto;
-    background-color:#fff ;
+    background-color:rgb(33, 41, 148) ;
 }
 footer{
     background-color: black ;
@@ -72,7 +75,8 @@ footer{
     color: white;
     font-size: 20px;
     padding: 10px 15px;
-    width: 45%;
+    width: 60%;
+    border-radius: 20px;
  }
  .page_wrapper .white .content .text_about_me .quote{
     padding: 15px;
@@ -93,10 +97,97 @@ footer{
 }
 .page_wrapper .white .skills{
     padding: 40px 0 px;
-    border-bottom: 1px solid black;
 }
 .page_wrapper .white .skills .my_skills, 
 .page_wrapper .white .skills .what_can_i_do{
     float: left;
     width: 50%;
+}
+
+.page_wrapper .white .skills .my_skills .photoshop,
+.page_wrapper .white .skills .my_skills .windows,
+.page_wrapper .white .skills .my_skills .html,
+.page_wrapper .white .skills .my_skills .discord,
+.page_wrapper .white .skills .my_skills .microwave,
+.page_wrapper .white .skills .my_skills .laundry{
+    background-color: #ccc;
+    margin-bottom: 3px;
+    font-style: italic;
+    padding: 5px 0px 5px 5px;
+}
+.page_wrapper .white .skills .my_skills .photoshop{
+    width: 50%;
+}
+.page_wrapper .white .skills .my_skills .windows{
+    width: 95%;
+}
+.page_wrapper .white .skills .my_skills .html{
+    width: 10%;
+}
+.page_wrapper .white .skills .my_skills .discord{
+    width: 80%;
+    
+}
+.page_wrapper .white .skills .my_skills .microwave{
+    background-color: green;
+}
+.page_wrapper .white .skills .my_skills .laundry{
+    width: 40%;
+}
+.page_wrapper .white .skills .my_skills .line{
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.page_wrapper .white .skills .my_skills .line div{
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    text-align: right;
+    border-right: 1px solid #777;
+    border-bottom: 1px solid #777;
+}
+.page_wrapper .white .skills .my_skills .line div.clear{
+    border: none;
+    width: 100%;
+}
+.page_wrapper .white .skills .my_skills .skills_title,
+.page_wrapper .white .skills .what_can_i_do .can_title{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.page_wrapper .white .skills .what_can_i_do .can_list{
+    list-style-type: none;
+    padding-left: 5px;
+}
+.page_wrapper .white .skills .what_can_i_do .can_list li{
+    margin-bottom: 10px;
+}
+.page_wrapper .white .skills .what_can_i_do .can_list li:before{
+    content: "\271A";
+}
+/*Перешли на тёмную сторону */
+.page_wrapper .black .footer a{
+    color: white;
+    text-decoration: none;
+
+}
+.page_wrapper .black .footer .footer_cols{
+    padding-bottom: 10px;
+    border-bottom: 1 px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.page_wrapper .black .footer .footer_cols .adress,
+.page_wrapper .black .footer .footer_cols .contacts,
+.page_wrapper .black .footer .footer_cols .socials{
+ float: left;
+ width: 33%;
+ padding: 30px;
+}
+.page_wrapper .black .footer .footer_menu a{
+    padding:  0px 10px ;
 }
