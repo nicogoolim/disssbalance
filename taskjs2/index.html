@@ -93,7 +93,7 @@
 	<ul class="ul8">
 		<li class="country">
 			Russia
-			<ul class="countries_off">	
+			<ul class="hide">	
 				<li>Moscow</li>
 				<li>Saint Petersburg </li>
 				<li>Kazan</li>
@@ -101,7 +101,7 @@
 		</li>
 		<li class="country">
 			USA
-			<ul class="countries_off">	
+			<ul class="hide">	
 				<li>Washington</li>
 				<li>New York</li>
 				<li>Los Angeles</li>
@@ -109,7 +109,7 @@
 		</li>
 		<li class="country">
 			Japan
-			<ul class="countries_off">	
+			<ul class="hide">	
 				<li>Tokyo</li>
 				<li>Kyoto </li>
 				<li>Osaka</li>
@@ -132,12 +132,22 @@
 	</select>
 </div>
 <div class="task10">
-	<h1> Задание 10</h1>
-	<select name="cur" id="" class="select10">
-		<option value="dollar" class="cur9">Dollar</option>
+	<h1> Задание 10</h1> Из
+	<select name="cur" id="cur" class="select10">
+		<option value="dol" class="cur9">Dollar</option>
 		<option value="euro" class="cur9">Euro</option>
-		<option value="rubles" class="cur9">Rouble</option>
+		<option value="rub" class="cur9">Rouble</option>
+	</select> 
+	в <select name="cur2" id="cur2" class="select20">
+		<option value="dol" class="cur29">Dollar</option>
+		<option value="euro" class="cur29">Euro</option>
+		<option value="rub" class="cur29">Rouble</option>
 	</select>
+	<button id = "but10"> Посчитать</button>
+	<br/>
+	 Введите сумму<br/>
+	<input type="text" id="inpcur"><br/>
+	<input type = "text" id = "outcur">
 </div>
 <script src="script.js"></script>
 </body>

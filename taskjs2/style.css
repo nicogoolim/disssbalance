@@ -16,9 +16,3 @@ display: block;
 .line{
     text-decoration: line-through ;
 }
-.countries_off{
-    display: none;
-}
-.countries_on{
-    display: block;
-}

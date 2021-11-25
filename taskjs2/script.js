@@ -35,13 +35,10 @@ function task3func(){
 let task4 = document.getElementById('task4check');
 task4.addEventListener('change', task4func);
 function task4func(event ){
-    console.log(event);
     let but = document.getElementById("task4but");
     if (task4.checked){
-        console.log("2");
         but.className = "show";
     }else{
-        console.log("3");
         but.className = "hide";
     }
 }
@@ -106,11 +103,11 @@ for(var i = 0; i<task8.length; i++){
 function task8func(event) {
      let ul = event.target.querySelector("ul");
      console.log(ul);
-     if(ul.className=="countries_off"){
-         ul.className = "countries_on";
+     if(ul.className=="hide"){
+         ul.className = "show";
      }
      else{
-        ul.className="countries_off";
+        ul.className="hide";
      }
 }
 
@@ -119,7 +116,6 @@ select.addEventListener('change',task9func);
 /* Задание 9 */
 function task9func(event){
     let arr = document.getElementsByClassName("city1");
-    console.dir(select);
         if(select.value == "Russia"){
             arr[0].innerHTML = "Moscow";
             arr[1].innerHTML = "Saint Petersburg";
@@ -139,3 +135,47 @@ function task9func(event){
 }
 
 /* Задание 10 */
+let but =  document.getElementById("but10");
+but.addEventListener('click', task10func);
+
+function task10func(){
+    let inp1 = document.getElementById("inpcur");
+    let out = document.getElementById("outcur");
+    let select1 = document.querySelector("#cur");
+    let select2 = document.querySelector("#cur2");
+    let current = inp1.value;
+    let arr = [0.87, 72.21]
+    if(select1.value == "euro"){
+        current /= arr[0];
+    }else if(select1.value == "rub"){
+        current /= arr[1];
+    }
+    if(select2.value=="euro"){
+        current *=arr[0];
+    }else if(select2.value=="rub"){
+        current*=arr[1];
+    }
+    out.value = current; 
+  console.log(current);
+}
+
+let selector = document.getElementById("cur2");
+selector.addEventListener('change', task11func);
+function task11func(){
+    let select1 = document.querySelector("#cur");
+    let select2 = document.querySelector("#cur2");
+    console.log(select2);
+    if(select1.value == select2.value){
+        select2.selectedIndex = (select2.selectedIndex+1)%3;
+    }
+}
+
+let selector1 = document.getElementById("cur");
+selector1.addEventListener('change', task12func);
+function task12func(){
+    let select1 = document.querySelector("#cur");
+    let select2 = document.querySelector("#cur2");
+    if(select1.value == select2.value){
+        select1.selectedIndex = (select1.selectedIndex+1)%3;
+    }
+}

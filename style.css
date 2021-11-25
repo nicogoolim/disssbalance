@@ -1,6 +1,37 @@
-p {
-    color : red;
+body{
+    margin:100px;
+}
+.source{
+    color : blue;
 }
 a{
-    color: blue;
+    background-color: skyblue;
+    margin: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    padding: 30px;
+    border: 1px solid #222;
+    border-radius: 45px;
+    
+    
+    font-size: 25px;
+    font-weight: 800;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 700ms ease;
+    text-decoration: none;
+    opacity: 1;
 }
+
+a:hover {
+    background-position: 0 100%;
+  }
+
+  
