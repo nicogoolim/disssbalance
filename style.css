@@ -1,37 +1,42 @@
-body{
-    margin:100px;
-}
-.source{
-    color : blue;
-}
-a{
-    background-color: skyblue;
-    margin: 20px 30px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    padding: 30px;
-    border: 1px solid #222;
-    border-radius: 45px;
-    
-    
-    font-size: 25px;
-    font-weight: 800;
-    color: royalblue;
+ body {
+    background: midnightblue;
+    height: 100%;
     overflow: hidden;
-    background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+    margin: 0 auto;
+    max-width:1000px ;
+  }
+  .source{
+    display: block;
+    justify-content: space-around;
+    position:relative;
+    outline: 1px solid white;
+    margin: 5%;
+    height: 60px;
+    box-sizing: border-box;
+  }
+a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(25, 185, 132), rgb(25, 185, 132) 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    transition: background-position 700ms ease;
+    transition-duration: 700ms;
     text-decoration: none;
-    opacity: 1;
 }
-
+.source:hover{
+    outline-width: 4px;
+    outline-color:rgb(25, 185, 132);
+}
 a:hover {
     background-position: 0 100%;
   }
-
-  
